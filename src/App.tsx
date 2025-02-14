@@ -89,6 +89,13 @@ function App() {
               alt=""
               className="w-40 animate-bounce"
             />
+            <div className="absolute b bottom-0 right-0 mr-10 mb-2.5">
+              <img
+                src="/character/pawpaw.jpeg"
+                alt=""
+                className=" rounded-3xl border-2 border-purple-400 w-32 animate-pulse"
+              />
+            </div>
           </div>
         </motion.div>
       )}
