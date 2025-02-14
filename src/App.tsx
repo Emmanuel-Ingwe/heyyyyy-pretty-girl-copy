@@ -22,36 +22,33 @@ const track = async () => {
 function App() {
   const steps = [
     {
-      content: "Heyyyyy, pretty girl.",
+      content: "babygirl, my Shugabankasa!😍🤣",
       image: "/character/one.png",
     },
     {
-      content: `Recently, we met.
-      And somehow, you've been on my mind ever since.
+      content: `my first love.
       `,
       image: "/character/two.png",
     },
     {
-      content: `Then we went on our first date…And I realized—yep, I want this girl. For life.
-      `,
+      content: `Everytime spent with you physically or not, will always be priceless.`,
       image: "/character/three.png",
     },
     {
-      content: `You're beautiful, you're smart, you're fun,
-and you make spending time together feel too short.`,
+      content: `I love you more than words can describe. the love we've always shared for each other has made distance mean nothing`,
       image: "/character/four.png",
     },
     {
-      content: `I look forward to when I'll see you again,
-hold your hands, and look into your pretty eyes.`,
+      content: `Your happiness matters a whole lot to me, because when you are happy i am happy`,
       image: "/character/five.png",
     },
     {
-      content: "So now I've got a question for you…",
+      content:
+        "Most beautiful woman in the whole WORLD! plu perfect, ambitious and strong",
       image: "/character/six.png",
     },
     {
-      content: "Will you be my Valentine?",
+      content: "Will you be my forever? sorryy, Valentine?",
       image: "/character/seven.png",
     },
   ];
@@ -77,17 +74,15 @@ hold your hands, and look into your pretty eyes.`,
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+          transition={{ duration: 0.5 }}>
           <Confetti width={width} height={height} />
-          <div className="fixed top-0 left-0 w-full h-full bg-[#FFC5D3] flex flex-col items-center justify-center">
+          <div className="fixed top-0 left-0 w-full h-full bg-[#e70d0d] flex flex-col items-center justify-center">
             <motion.h1
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.3, type: "spring" }}
-              className="text-white text-4xl font-bold"
-            >
-              Yayyyyyyy!!!!!
+              className="text-white text-4xl font-bold">
+              YESSSS!!!!!
             </motion.h1>
             <img
               src="/character/yayyyy.png"
@@ -97,7 +92,7 @@ hold your hands, and look into your pretty eyes.`,
           </div>
         </motion.div>
       )}
-      <div className="bg-[#FFC5D3] min-h-screen text-white p-5 flex flex-col items-center justify-center max-w-md mx-auto">
+      <div className="bg-[#f11c4e] min-h-screen text-white p-5 flex flex-col items-center justify-center max-w-md mx-auto">
         <motion.img
           key={currentStep}
           initial={{ opacity: 0, y: 20 }}
@@ -112,8 +107,7 @@ hold your hands, and look into your pretty eyes.`,
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="font-josefin text-4xl font-bold"
-        >
+          className="font-josefin text-4xl font-bold flex items-center text-center justify-center">
           {steps[currentStep].content}
         </motion.div>
 
@@ -121,15 +115,13 @@ hold your hands, and look into your pretty eyes.`,
           <>
             <button
               onClick={() => setCurrentStep(currentStep + 1)}
-              className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
-            >
-              Next
+              className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold">
+              click this please
             </button>
             {currentStep > 0 && (
               <button
                 onClick={() => setCurrentStep(currentStep - 1)}
-                className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-2 font-semibold opacity-90"
-              >
+                className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-2 font-semibold opacity-90">
                 Back
               </button>
             )}
@@ -142,8 +134,7 @@ hold your hands, and look into your pretty eyes.`,
                 setSheWantsToBeMyValentine(true);
                 await track();
               }}
-              className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
-            >
+              className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold">
               Yes
             </button>
 
@@ -152,8 +143,7 @@ hold your hands, and look into your pretty eyes.`,
                 setSheWantsToBeMyValentine(true);
                 await track();
               }}
-              className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-2 font-semibold"
-            >
+              className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-2 font-semibold">
               Yes
             </button>
           </>
